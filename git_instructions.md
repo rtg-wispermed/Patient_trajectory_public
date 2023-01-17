@@ -18,7 +18,7 @@ git rev-parse --show-toplevel
 - Let's say you do not have local repository you would clone this repository like so
 
 ```
-git clone https://github.com/bahadirery/Wispermed.git
+git clone https://github.com/rtg-wispermed/patient-history.git
 
 ```
 This will initialize the git and download all the content from default branch.
@@ -27,7 +27,7 @@ This will initialize the git and download all the content from default branch.
 ```
 git init 
 
-git remote add Wispermed https://github.com/bahadirery/Wispermed.git
+git remote add patient-history https://github.com/rtg-wispermed/patient-history.git
 
 ```
 
@@ -41,7 +41,7 @@ git status
 Assume, someone else made some changes before you and commited them. You would want to update your local repository.( Actually it makes sense to do it before start working because we are small group and no one would write a code that conflicts with other codes.) Run command:
 
 ```
-git pull Wispermed main
+git pull patient-history main
 
 ```
 Then, you stage your changes. The '.' means you want to stage all of your changes.
@@ -56,7 +56,7 @@ git commit -m "your commit message"
 Lastly, you must push your commit to the main branch.
 
 ```
-git push Wispermed main
+git push patient-history main
 ```
 
 If there is no conflicting code, above commands should work. However, if you think the you should modify (or modified) the code in a way that it would conflict, here is how to create a new branch and start a pull request to be compared and merged with the main branch.
