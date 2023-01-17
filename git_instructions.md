@@ -1,7 +1,3 @@
-# Wispermed
-
-- This is a place to share codes for the data analysis work of Wispermed project. 
-
 ### Instructions on working with git in command line
 
 - To see if you are actually inside a working tree
