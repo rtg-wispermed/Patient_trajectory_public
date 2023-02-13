@@ -44,8 +44,8 @@ def getPrimaryTumor(json_pat):
     ctnm = groupResources(ctnm,'dt_record')
     ptnm = groupResources(ptnm,'dt_record')
 
-    sep_text = "********FROM HERE PTNM*********"
-    cond_simp.append([ctnm,sep_text,ptnm])
+    
+    cond_simp.append([ptnm]) # We take only ptnm as stated in PDF from Meijie
     
     return cond_simp
 

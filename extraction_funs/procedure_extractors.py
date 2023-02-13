@@ -12,7 +12,7 @@ def getRadioTherapy():
         'dt_end': ['performedPeriod','end'],
         'cat_intention': ['reasonCode','*','coding',0,'code'],
         'cat_status': ['status'],
-        'cat_reason_end': ['statusReason',0,'coding',0,'code'],
+        'cat_reason_end': ['statusReason','coding',0,'code'],
     })
     ex.addField('cat_type_radiation1', lambda x: tryPath(x, ['code','coding','*','display'],
                                                          lambda x: tryPath(x,['code']) != '33195004'), False)
