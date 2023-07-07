@@ -12,18 +12,18 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-04-14",
+            "dt_record": "2014-05-26",
             "cat_version": null,
             "tnm_stage": "III",
             "tstage": "2 B",
             "nstage": "0",
             "p_or_c": "p",
             "val_print": "Version: k.A., pIII T2 BN0M k.A. ",
-            "dt_end": "2014-05-03"
+            "dt_end": "2014-06-04"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-05-03",
+            "dt_record": "2014-06-04",
             "tnm_stage": "IIIB",
             "cat_version": "AJCC2017",
             "tstage": "2 B",
@@ -31,11 +31,11 @@
             "mstage": "0",
             "p_or_c": "c",
             "val_print": "Version: AJCC2017, cIIIB T2 BN1aM0",
-            "dt_end": "2014-05-23"
+            "dt_end": "2014-07-05"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-05-23",
+            "dt_record": "2014-07-05",
             "cat_version": null,
             "tnm_stage": "IIIB",
             "tstage": "2 B",
@@ -44,11 +44,11 @@
             "snodes_examined": 1,
             "p_or_c": "p",
             "val_print": "Version: k.A., pIIIB T2 BN1aM k.A. , Sentinel: 1+/1",
-            "dt_end": "2015-02-20"
+            "dt_end": "2015-04-12"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-02-20",
+            "dt_record": "2015-04-12",
             "cat_version": null,
             "tnm_stage": "IIIC",
             "tstage": "2 B",
@@ -57,11 +57,11 @@
             "rnodes_examined": 1,
             "p_or_c": "p",
             "val_print": "Version: k.A., pIIIC T2 BN2 BM k.A. , Regional Lymphnodes: 1+/1",
-            "dt_end": "2015-04-03"
+            "dt_end": "2015-05-19"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-04-03",
+            "dt_record": "2015-05-19",
             "cat_version": null,
             "tnm_stage": "IIIC",
             "tstage": "2 B",
@@ -70,33 +70,33 @@
             "rnodes_examined": 7,
             "p_or_c": "p",
             "val_print": "Version: k.A., pIIIC T2 BN2 BM k.A. , Regional Lymphnodes: 1+/7",
-            "dt_end": "2016-05-02"
+            "dt_end": "2016-06-10"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-05-02",
+            "dt_record": "2016-06-10",
             "cat_version": null,
             "tnm_stage": "IIIC",
             "tstage": "2 B",
             "nstage": "2c",
             "p_or_c": "p",
             "val_print": "Version: k.A., pIIIC T2 BN2cM k.A. ",
-            "dt_end": "2016-09-29"
+            "dt_end": "2016-11-06"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-09-29",
+            "dt_record": "2016-11-06",
             "cat_version": null,
             "tnm_stage": "IV",
             "tstage": "2 B",
             "nstage": "3",
             "p_or_c": "p",
             "val_print": "Version: k.A., pIV T2 BN3M k.A. ",
-            "dt_end": "2016-10-17"
+            "dt_end": "2016-11-30"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-10-17",
+            "dt_record": "2016-11-30",
             "cat_version": null,
             "tnm_stage": "IV",
             "tstage": "2 B",
@@ -111,19 +111,19 @@
     "examinations": [
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-06-23",
+            "dt_record": "2014-07-27",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
             ],
             "cat_reasons": [
-                "Initial presentation",
-                "Treatment planning"
+                "Treatment planning",
+                "Initial presentation"
             ]
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-09-08",
+            "dt_record": "2014-11-01",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
@@ -133,12 +133,12 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-12-28",
+            "dt_record": "2015-02-25",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "Ultrasonography",
+                "physical exam",
                 "computed tomography",
-                "physical exam"
+                "Ultrasonography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -147,12 +147,12 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-02-14",
+            "dt_record": "2015-04-02",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "Ultrasonography",
+                "physical exam",
                 "computed tomography",
-                "physical exam"
+                "Ultrasonography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -161,7 +161,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-03-06",
+            "dt_record": "2015-04-14",
             "cat_examination_type": "physical exam",
             "cat_reasons": [
                 "Treatment planning",
@@ -170,22 +170,22 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-03-14",
+            "dt_record": "2015-05-04",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "Magnetic resonance imaging",
+                "physical exam",
                 "computed tomography",
-                "physical exam"
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
+                "medical care",
                 "Treatment planning",
-                "medical care"
+                "Diagnostic or staging procedure"
             ]
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-04-29",
+            "dt_record": "2015-06-17",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -197,7 +197,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-06-24",
+            "dt_record": "2015-08-08",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
@@ -207,13 +207,13 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-09-09",
+            "dt_record": "2015-10-20",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
-                "Magnetic resonance imaging",
                 "computed tomography",
-                "physical exam"
+                "physical exam",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -222,7 +222,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-01-05",
+            "dt_record": "2016-02-12",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
@@ -232,13 +232,13 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-03-02",
+            "dt_record": "2016-04-29",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
-                "Magnetic resonance imaging",
                 "computed tomography",
-                "physical exam"
+                "physical exam",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -247,7 +247,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-04-22",
+            "dt_record": "2016-06-03",
             "cat_examination_type": [
                 "Ultrasonography",
                 "physical exam"
@@ -256,7 +256,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-06-28",
+            "dt_record": "2016-08-15",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
@@ -266,23 +266,23 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-09-10",
+            "dt_record": "2016-11-01",
             "cat_examination_type": [
-                "physical exam",
                 "Laboratory procedure",
-                "Magnetic resonance imaging",
+                "Ultrasonography",
                 "computed tomography",
-                "Ultrasonography"
+                "physical exam",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
+                "medical care",
                 "Treatment planning",
-                "medical care"
+                "Diagnostic or staging procedure"
             ]
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-10-21",
+            "dt_record": "2016-12-05",
             "cat_examination_type": "physical exam",
             "cat_reasons": [
                 "Treatment planning",
@@ -291,7 +291,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-11-11",
+            "dt_record": "2017-01-05",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "computed tomography"
@@ -303,7 +303,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-11-16",
+            "dt_record": "2017-01-08",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -311,64 +311,21 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-11-29",
+            "dt_record": "2017-01-14",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
             ],
             "cat_reasons": "Therapeutic Procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-12-05",
-            "cat_examination_type": [
-                "Laboratory procedure",
-                "physical exam"
-            ],
-            "cat_reasons": "Therapeutic Procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-12-20",
-            "cat_examination_type": [
-                "Laboratory procedure",
-                "physical exam"
-            ],
-            "cat_reasons": "Therapeutic Procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-12-22",
-            "cat_examination_type": [
-                "Laboratory procedure",
-                "physical exam"
-            ],
-            "cat_reasons": "Therapeutic Procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-01-12",
-            "cat_examination_type": [
-                "Laboratory procedure",
-                "physical exam"
-            ],
-            "cat_reasons": "Therapeutic Procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-01-22",
-            "cat_examination_type": "Laboratory procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
             "dt_record": "2017-01-23",
-            "cat_examination_type": "Magnetic resonance imaging",
-            "cat_reasons": "Diagnostic or staging procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-01-24",
-            "cat_examination_type": "Laboratory procedure"
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam"
+            ],
+            "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
@@ -381,25 +338,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-02-04",
-            "cat_examination_type": [
-                "Laboratory procedure",
-                "physical exam"
-            ]
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-02-05",
-            "cat_examination_type": [
-                "Laboratory procedure",
-                "computed tomography",
-                "physical exam"
-            ],
-            "cat_reasons": "Diagnostic or staging procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-03-07",
+            "dt_record": "2017-02-08",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -408,7 +347,49 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-02-23",
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam"
+            ],
+            "cat_reasons": "Therapeutic Procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-03-03",
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam"
+            ]
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
             "dt_record": "2017-03-09",
+            "cat_examination_type": "Laboratory procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-03-10",
+            "cat_examination_type": "Magnetic resonance imaging",
+            "cat_reasons": "Diagnostic or staging procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-03-12",
+            "cat_examination_type": "Laboratory procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-03-18",
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam"
+            ],
+            "cat_reasons": "Therapeutic Procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-03-21",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -416,7 +397,26 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-03-25",
+            "dt_record": "2017-03-26",
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam",
+                "computed tomography"
+            ],
+            "cat_reasons": "Diagnostic or staging procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-04-17",
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam"
+            ],
+            "cat_reasons": "Therapeutic Procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-05-08",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -424,7 +424,15 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-04-21",
+            "dt_record": "2017-05-12",
+            "cat_examination_type": [
+                "Laboratory procedure",
+                "physical exam"
+            ]
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2017-06-08",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -433,56 +441,56 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-05-30",
+            "dt_record": "2017-07-11",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "Magnetic resonance imaging",
-                "computed tomography"
+                "computed tomography",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Treatment planning"
+                "Treatment planning",
+                "Diagnostic or staging procedure"
             ]
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-06-01",
+            "dt_record": "2017-07-17",
             "cat_examination_type": "Ultrasonography",
             "cat_reasons": "Treatment planning"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-06-17",
+            "dt_record": "2017-08-12",
             "cat_examination_type": "Positron Emission Tomography",
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-07-04",
+            "dt_record": "2017-08-17",
             "cat_examination_type": "Magnetic resonance imaging",
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-08-29",
+            "dt_record": "2017-09-29",
             "cat_examination_type": "Magnetic resonance imaging",
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-09-30",
+            "dt_record": "2017-11-10",
             "cat_examination_type": "computed tomography",
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-10-24",
+            "dt_record": "2017-12-13",
             "cat_examination_type": "Electrocardiography",
             "cat_reasons": "Treatment planning"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-11-15",
+            "dt_record": "2017-12-23",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -491,22 +499,22 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-12-14",
+            "dt_record": "2018-01-26",
             "cat_examination_type": "Magnetic resonance imaging",
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-01-19",
+            "dt_record": "2018-02-16",
             "cat_examination_type": [
-                "computed tomography",
-                "Electrocardiography"
+                "Electrocardiography",
+                "computed tomography"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-01-24",
+            "dt_record": "2018-03-04",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Ultrasonography",
@@ -515,36 +523,36 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-02-16",
+            "dt_record": "2018-03-19",
             "cat_examination_type": "Laboratory procedure",
             "cat_reasons": "medical care"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-03-07",
+            "dt_record": "2018-05-03",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "Magnetic resonance imaging",
+                "Ultrasonography",
                 "computed tomography",
-                "Ultrasonography"
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-03-28",
+            "dt_record": "2018-05-04",
             "cat_examination_type": "physical exam",
             "cat_reasons": "medical care"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-05-14",
+            "dt_record": "2018-06-25",
             "cat_examination_type": "physical exam",
             "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-06-05",
+            "dt_record": "2018-07-16",
             "cat_examination_type": "computed tomography",
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -553,7 +561,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-07-01",
+            "dt_record": "2018-08-15",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "Magnetic resonance imaging"
@@ -562,7 +570,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-08-02",
+            "dt_record": "2018-10-06",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -571,11 +579,11 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-10-01",
+            "dt_record": "2018-11-07",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "computed tomography",
-                "physical exam"
+                "physical exam",
+                "computed tomography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -584,7 +592,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-10-21",
+            "dt_record": "2018-11-27",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -593,71 +601,71 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-01-15",
+            "dt_record": "2019-02-28",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "Magnetic resonance imaging",
                 "computed tomography",
                 "Electrocardiography",
-                "physical exam"
+                "physical exam",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-03-15",
+            "dt_record": "2019-05-08",
             "cat_examination_type": "physical exam",
             "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-03-23",
+            "dt_record": "2019-05-19",
             "cat_examination_type": "physical exam",
             "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-05-06",
+            "dt_record": "2019-07-06",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
             ],
-            "cat_reasons": "Therapeutic Procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-06-11",
-            "cat_examination_type": [
-                "Magnetic resonance imaging",
-                "computed tomography"
-            ],
-            "cat_reasons": "Diagnostic or staging procedure"
-        },
-        {
-            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-07-09",
-            "cat_examination_type": "Laboratory procedure",
             "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
             "dt_record": "2019-07-30",
-            "cat_examination_type": "Magnetic resonance imaging",
+            "cat_examination_type": [
+                "computed tomography",
+                "Magnetic resonance imaging"
+            ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-08-12",
+            "dt_record": "2019-08-17",
             "cat_examination_type": "Laboratory procedure",
             "cat_reasons": "Therapeutic Procedure"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-08-31",
+            "dt_record": "2019-09-19",
+            "cat_examination_type": "Magnetic resonance imaging",
+            "cat_reasons": "Diagnostic or staging procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2019-10-03",
+            "cat_examination_type": "Laboratory procedure",
+            "cat_reasons": "Therapeutic Procedure"
+        },
+        {
+            "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
+            "dt_record": "2019-10-11",
             "cat_examination_type": [
                 "Laboratory procedure",
-                "computed tomography",
-                "physical exam"
+                "physical exam",
+                "computed tomography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -666,7 +674,7 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-10-03",
+            "dt_record": "2019-11-03",
             "cat_examination_type": [
                 "Laboratory procedure",
                 "physical exam"
@@ -675,21 +683,21 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-10-04",
+            "dt_record": "2019-11-23",
             "cat_examination_type": "physical exam",
             "cat_reasons": "Treatment planning"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-10-06",
+            "dt_record": "2019-11-28",
             "cat_examination_type": "physical exam"
         }
     ],
     "radiotherapy": [
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_start": "2016-10-17",
-            "dt_end": "2016-11-08",
+            "dt_start": "2016-11-30",
+            "dt_end": "2016-12-21",
             "cat_intention": [
                 "palliative",
                 "adjuvant"
@@ -699,16 +707,16 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_start": "2017-07-10",
-            "dt_end": "2017-07-18",
+            "dt_start": "2017-08-19",
+            "dt_end": "2017-08-28",
             "cat_intention": "palliative",
             "cat_status": "completed",
             "cat_reason_end": "regular ending"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_start": "2019-07-31",
-            "dt_end": "2019-07-31",
+            "dt_start": "2019-09-20",
+            "dt_end": "2019-09-20",
             "cat_intention": "palliative",
             "cat_status": "completed",
             "cat_reason_end": "Miscellaneous"
@@ -717,65 +725,65 @@
     "progresses": [
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-09-08",
+            "dt_record": "2014-11-01",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-12-28",
+            "dt_record": "2015-02-25",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "questionable finding",
             "cat_progress_nodes": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-02-14",
+            "dt_record": "2015-04-02",
             "cat_progress_nodes": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-03-14",
+            "dt_record": "2015-05-04",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "No distant metastases detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-06-24",
+            "dt_record": "2015-08-08",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-09-09",
+            "dt_record": "2015-10-20",
             "cat_progress_overall": "Tumor-free (after resection)",
             "cat_progress_metastases": "No distant metastases detectable",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-01-05",
+            "dt_record": "2016-02-12",
             "cat_progress_primary": "no tumor detectable",
             "cat_progress_nodes": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-03-02",
+            "dt_record": "2016-04-29",
             "cat_progress_overall": "Tumor-free (after resection)",
             "cat_progress_metastases": "No distant metastases detectable",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-04-22",
+            "dt_record": "2016-06-03",
             "cat_progress_nodes": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-06-28",
+            "dt_record": "2016-08-15",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-09-10",
+            "dt_record": "2016-11-01",
             "cat_progress_primary": "no tumor detectable",
             "cat_progress_overall": "Progression (tumor growth > 25% and/or progression of tumor disease)",
             "cat_progress_metastases": "New distant metastasis(es) or metastasis recurrence",
@@ -783,119 +791,119 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-11-11",
+            "dt_record": "2017-01-05",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-01-23",
+            "dt_record": "2017-03-10",
             "cat_progress_overall": "No change (tumor reduction < 50% or increase < 25%)",
             "cat_progress_metastases": "Distant Metastases No Change"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-02-05",
+            "dt_record": "2017-03-26",
             "cat_progress_metastases": "Distant metastases residuals"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-05-30",
+            "dt_record": "2017-07-11",
             "cat_progress_overall": "Progression (tumor growth > 25% and/or progression of tumor disease)",
             "cat_progress_metastases": "New distant metastasis(es) or metastasis recurrence",
             "cat_progress_nodes": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-06-01",
+            "dt_record": "2017-07-17",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-06-17",
+            "dt_record": "2017-08-12",
             "cat_progress_metastases": "No distant metastases detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-07-04",
+            "dt_record": "2017-08-17",
             "cat_progress_metastases": "Distant Metastasis Progress"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-08-29",
+            "dt_record": "2017-09-29",
             "cat_progress_overall": "Progression (tumor growth > 25% and/or progression of tumor disease)",
             "cat_progress_metastases": "Distant Metastasis Progress"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-09-30",
+            "dt_record": "2017-11-10",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "No distant metastases detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2017-12-14",
+            "dt_record": "2018-01-26",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-01-19",
+            "dt_record": "2018-02-16",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-01-24",
+            "dt_record": "2018-03-04",
             "cat_progress_nodes": "No lymph node involvement detectable"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-03-07",
+            "dt_record": "2018-05-03",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "questionable finding",
             "cat_progress_nodes": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-06-05",
+            "dt_record": "2018-07-16",
             "cat_progress_overall": "No change (tumor reduction < 50% or increase < 25%)",
             "cat_progress_metastases": "Distant Metastases No Change"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-07-01",
+            "dt_record": "2018-08-15",
             "cat_progress_overall": "No change (tumor reduction < 50% or increase < 25%)",
             "cat_progress_metastases": "Distant Metastases No Change"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2018-10-01",
+            "dt_record": "2018-11-07",
             "cat_progress_overall": "No change (tumor reduction < 50% or increase < 25%)",
             "cat_progress_metastases": "Distant Metastases No Change"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-01-15",
+            "dt_record": "2019-02-28",
             "cat_progress_overall": "No change (tumor reduction < 50% or increase < 25%)",
             "cat_progress_metastases": "Distant Metastases No Change"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-06-11",
+            "dt_record": "2019-07-30",
             "cat_progress_overall": "Not applicable, as treatment is part of a multimodal concept and this is not yet completed",
             "cat_progress_metastases": "questionable finding"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-07-30",
+            "dt_record": "2019-09-19",
             "cat_progress_overall": "No change (tumor reduction < 50% or increase < 25%)",
             "cat_progress_metastases": "Distant Metastases No Change"
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2019-08-31",
+            "dt_record": "2019-10-11",
             "cat_progress_metastases": "No distant metastases detectable"
         }
     ],
@@ -904,7 +912,7 @@
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
             "cat_drugtype": "Nivo+Ipi",
             "dt_start": "2016-07-13T19:41:57+00:00",
-            "dt_end": "2017-03-07",
+            "dt_end": "2017-04-17",
             "cat_intention": "palliative",
             "cat_status": "stopped",
             "cat_reason_end": "Discontinuation due to side effects",
@@ -914,7 +922,7 @@
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
             "cat_drugtype": "Pembrolizumab",
             "dt_start": "2017-06-06T19:41:57+00:00",
-            "dt_end": "2019-10-27",
+            "dt_end": "2019-12-15",
             "cat_intention": "palliative",
             "cat_status": "stopped",
             "cat_reason_end": "Miscellaneous"
@@ -923,26 +931,26 @@
     "properties_primary": [
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2014-04-14",
+            "dt_record": "2014-05-26",
             "flg_ulcerated": true,
             "flg_regression": false,
             "no_tumor_thickness": 1.9
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2015-02-20",
+            "dt_record": "2015-04-12",
             "flg_transcapsular": true
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-10-17",
+            "dt_record": "2016-11-30",
             "flg_transcapsular": true
         }
     ],
     "oncogenes": [
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2013-05-05",
+            "dt_record": "2013-07-06",
             "val_print": [
                 "BRAwildtype",
                 "NRAwildtype"
@@ -950,11 +958,11 @@
         },
         {
             "patid": "Patient/02b4f296-3cfc-4e2b-a35c-70c83712160b",
-            "dt_record": "2016-05-02",
+            "dt_record": "2016-06-10",
             "val_print": [
+                "TERwildtype",
                 "NFwildtype",
                 "BRAwildtype",
-                "TERwildtype",
                 "NRAwildtype"
             ]
         }

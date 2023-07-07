@@ -1,0 +1,33 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environments
+venv/
+env/
+*.venv
+*.env
+
+# Editors
+.vscode/
+.idea/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+*.sql
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+fhir_playgorund
