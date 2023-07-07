@@ -19,6 +19,7 @@ def tryPath(resource,fields,condition = None):
                 res = [tryPath(x, remainingFields) for x in res]
             else: 
                 res = [tryPath(x, remainingFields) for x in res if condition(x)]
+                res = [x for x in res if x is not None]
             if len(res) > 0:
                 if len(res) == 1:
                     res = res[0]
