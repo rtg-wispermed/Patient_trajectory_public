@@ -2105,7 +2105,7 @@
                 "subject": {
                     "reference": "Patient/01"
                 },
-                "effectiveDateTime": "2013",
+                "effectiveDateTime": "2013-01-01",
                 "hasMember": [
                     {
                         "reference": "Observation/96522a38-0b17-4fd9-aa26-ca9b8c3b0468"
@@ -2148,7 +2148,7 @@
                 "subject": {
                     "reference": "Patient/01"
                 },
-                "effectiveDateTime": "2013",
+                "effectiveDateTime": "2013-01-01",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -2202,7 +2202,7 @@
                 "subject": {
                     "reference": "Patient/01"
                 },
-                "effectiveDateTime": "2013",
+                "effectiveDateTime": "2013-01-01",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -19882,7 +19882,7 @@
                 "subject": {
                     "reference": "Patient/01"
                 },
-                "effectiveDateTime": "2013",
+                "effectiveDateTime": "2013-01-01",
                 "result": [
                     {
                         "reference": "Observation/b386de91-2447-4716-b2ba-9e8181975273"

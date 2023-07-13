@@ -80,7 +80,7 @@
       let patient_id = []
       let medication_data = [] //range
       let careplan_data = []// point
-      let properties_primary = []//point
+      let properties = []//point
       let oncogenes = [] //point
       
 
@@ -91,10 +91,14 @@
         .then((response) => response.json())
         .then((data) => {
          
-        for (let item of data.stages) {
+       /* for (let item of data.stages) {
             stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; tstage:${item.tstage}; nstage:${item.nstage}; mstage:${item.mstage}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
 
-          }
+          }*/
+        for (let item of data.stages) {
+            stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
+
+        }
         for (let item of data.examinations){
             examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
 
@@ -108,8 +112,13 @@
          for (let item of data.careplans){
             careplan_data.push([item.time_of_careplan,`Careplan name:${item.careplan_name} Intention:${item.careplan_intention} Type:${item.careplan_type}`])
          }
-         for (let item of data.properties_primary){
-            properties_primary.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
+        for (let item of data.properties_primary){
+            if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
+            properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
+            }
+            else{
+            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} regression:${item.flg_regression} no_tumor_thickness:${item.no_tumor_thickness} `])
+            }
          }
          for (let item of data.oncogenes){
             oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
@@ -142,8 +151,8 @@
           momentSeries3.direction("down");
 
           // create for properties
-          var momentSeries4 = chart.moment(properties_primary);
-          momentSeries4.name("properties_primary");
+          var momentSeries4 = chart.moment(properties);
+          momentSeries4.name("properties");
         
 
           // create for oncogenes
