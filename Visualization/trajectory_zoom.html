@@ -110,7 +110,7 @@
             medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end}`,item.dt_start,item.dt_end])
          }
          for (let item of data.careplans){
-            careplan_data.push([item.time_of_careplan,`Careplan name:${item.careplan_name} Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+            careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
          }
         for (let item of data.properties_primary){
             if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {

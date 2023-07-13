@@ -146,10 +146,10 @@
             progress_data.push([item.dt_record,` Progress:${item.cat_progress_nodes} `])
          }
          for (let item of data.medication){
-            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end}`,item.dt_start,item.dt_end])
+            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
          }
          for (let item of data.careplans){
-            careplan_data.push([item.time_of_careplan,`Careplan name:${item.careplan_name} Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+            careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
          }
         for (let item of data.properties_primary){
             if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
@@ -249,10 +249,10 @@ fetch('./patient_01_simple.json')
             progress_data.push([item.dt_record,` Progress:${item.cat_progress_nodes} `])
          }
          for (let item of data.medication){
-            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end}`,item.dt_start,item.dt_end])
+            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
          }
          for (let item of data.careplans){
-            careplan_data.push([item.time_of_careplan,`Careplan name:${item.careplan_name} Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+            careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
          }
         for (let item of data.properties_primary){
             if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
@@ -281,7 +281,8 @@ fetch('./patient_01_simple.json')
     var rangeSeries2 = chart.range(medication_data);
     rangeSeries2.name("medication");
     rangeSeries2.direction("down");
-    rangeSeries2.normal().fill("#00a8e0");
+    rangeSeries2.normal().fill("#7CB9E8");
+    //rangeSeries2.normal().fill("#00a8e0");
     //momentSeries2.normal().fill("#00a8e0"); 
  
     // set the chart title
@@ -353,10 +354,10 @@ fetch('./patient_01_simple.json')
             progress_data.push([item.dt_record,` Progress:${item.cat_progress_nodes} `])
          }
          for (let item of data.medication){
-            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end}`,item.dt_start,item.dt_end])
+            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
          }
          for (let item of data.careplans){
-            careplan_data.push([item.time_of_careplan,`Careplan name:${item.careplan_name} Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+            careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
          }
         for (let item of data.properties_primary){
             if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
@@ -412,7 +413,7 @@ fetch('./patient_01_simple.json')
           rangeSeries2.name("medication");
           rangeSeries2.direction("down");
           rangeSeries2.normal().fill("#7CB9E8");
-          //momentSeries2.normal().fill("#00a8e0"); 
+     
     
   
     // set the chart title
