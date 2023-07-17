@@ -22,7 +22,7 @@
     body,
     #container {
       width: 95%;
-      height: 70%;
+      height: 60%;
       margin: 20;
       padding: 10;
     }
@@ -156,7 +156,7 @@
             properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
             }
             else{
-            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} regression:${item.flg_regression} no_tumor_thickness:${item.no_tumor_thickness} `])
+            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
             }
          }
          for (let item of data.oncogenes){
@@ -259,7 +259,7 @@ fetch('./patient_01_simple.json')
             properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
             }
             else{
-            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} regression:${item.flg_regression} no_tumor_thickness:${item.no_tumor_thickness} `])
+            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
             }
          }
          for (let item of data.oncogenes){
@@ -364,7 +364,7 @@ fetch('./patient_01_simple.json')
             properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
             }
             else{
-            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} regression:${item.flg_regression} no_tumor_thickness:${item.no_tumor_thickness} `])
+            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
             }
          }
          for (let item of data.oncogenes){

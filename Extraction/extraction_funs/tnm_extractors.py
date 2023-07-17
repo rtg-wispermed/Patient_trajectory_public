@@ -48,13 +48,13 @@ def getExtractorPropertiesPrimary():
     
     # boolean infos
     conds = {'flg_ulcerated': lambda x: tryPath(x, ['code','coding',0,'display']) == 'ulceration',
-             'flg_transcapsular': lambda x: tryPath(x, ['code','coding',0,'display']) == 'capsule breakthrough',
-             'flg_reexcision': lambda x: tryPath(x, ['code','coding',0,'display']) == 'Nachexzision',
-             'flg_regression': lambda x: tryPath(x, ['code','coding',0,'display']) == 'regression'}
+             'flg_transcapsular': lambda x: tryPath(x, ['code','coding',0,'display']) == 'capsule breakthrough'}
+             #'flg_reexcision': lambda x: tryPath(x, ['code','coding',0,'display']) == 'Nachexzision',
+             #'flg_regression': lambda x: tryPath(x, ['code','coding',0,'display']) == 'regression'}
     ex.addFieldsFromList(['valueBoolean'], conds)
     
     # quantity infos
-    conds = {'no_mitotic_rate': lambda x: tryPath(x, ['code','coding',0,'display']) == 'Anzahl Mitosen pro mm^2',
+    conds = {#'no_mitotic_rate': lambda x: tryPath(x, ['code','coding',0,'display']) == 'Anzahl Mitosen pro mm^2',
              'no_tumor_thickness': lambda x: tryPath(x, ['code','coding',0,'display']) == 'tumor thickness in mm'}
     ex.addFieldsFromList(['valueQuantity','value'], conds)
     

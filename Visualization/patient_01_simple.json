@@ -117,8 +117,8 @@
                 "physical exam"
             ],
             "cat_reasons": [
-                "Treatment planning",
-                "Initial presentation"
+                "Initial presentation",
+                "Treatment planning"
             ]
         },
         {
@@ -135,9 +135,9 @@
             "patid": "Patient/01",
             "dt_record": "2014-08-22",
             "cat_examination_type": [
+                "computed tomography",
                 "Laboratory procedure",
                 "physical exam",
-                "computed tomography",
                 "Ultrasonography"
             ],
             "cat_reasons": [
@@ -149,9 +149,9 @@
             "patid": "Patient/01",
             "dt_record": "2014-10-06",
             "cat_examination_type": [
+                "computed tomography",
                 "Laboratory procedure",
                 "physical exam",
-                "computed tomography",
                 "Ultrasonography"
             ],
             "cat_reasons": [
@@ -172,15 +172,15 @@
             "patid": "Patient/01",
             "dt_record": "2014-10-31",
             "cat_examination_type": [
+                "computed tomography",
                 "Laboratory procedure",
                 "physical exam",
-                "computed tomography",
                 "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Treatment planning",
                 "medical care",
-                "Diagnostic or staging procedure"
+                "Diagnostic or staging procedure",
+                "Treatment planning"
             ]
         },
         {
@@ -191,8 +191,8 @@
                 "physical exam"
             ],
             "cat_reasons": [
-                "Treatment planning",
-                "medical care"
+                "medical care",
+                "Treatment planning"
             ]
         },
         {
@@ -209,11 +209,11 @@
             "patid": "Patient/01",
             "dt_record": "2015-04-23",
             "cat_examination_type": [
-                "computed tomography",
-                "Laboratory procedure",
-                "Magnetic resonance imaging",
                 "physical exam",
-                "Ultrasonography"
+                "Ultrasonography",
+                "Magnetic resonance imaging",
+                "Laboratory procedure",
+                "computed tomography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -234,11 +234,11 @@
             "patid": "Patient/01",
             "dt_record": "2015-10-30",
             "cat_examination_type": [
-                "computed tomography",
-                "Laboratory procedure",
-                "Magnetic resonance imaging",
                 "physical exam",
-                "Ultrasonography"
+                "Ultrasonography",
+                "Magnetic resonance imaging",
+                "Laboratory procedure",
+                "computed tomography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -268,16 +268,16 @@
             "patid": "Patient/01",
             "dt_record": "2016-04-29",
             "cat_examination_type": [
-                "computed tomography",
-                "Laboratory procedure",
-                "Magnetic resonance imaging",
                 "physical exam",
-                "Ultrasonography"
+                "Ultrasonography",
+                "Magnetic resonance imaging",
+                "Laboratory procedure",
+                "computed tomography"
             ],
             "cat_reasons": [
-                "Treatment planning",
                 "medical care",
-                "Diagnostic or staging procedure"
+                "Diagnostic or staging procedure",
+                "Treatment planning"
             ]
         },
         {
@@ -293,8 +293,8 @@
             "patid": "Patient/01",
             "dt_record": "2016-07-01",
             "cat_examination_type": [
-                "Laboratory procedure",
-                "computed tomography"
+                "computed tomography",
+                "Laboratory procedure"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -399,9 +399,9 @@
             "patid": "Patient/01",
             "dt_record": "2016-09-30",
             "cat_examination_type": [
+                "computed tomography",
                 "Laboratory procedure",
-                "physical exam",
-                "computed tomography"
+                "physical exam"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
@@ -443,13 +443,13 @@
             "patid": "Patient/01",
             "dt_record": "2017-01-13",
             "cat_examination_type": [
-                "Laboratory procedure",
                 "computed tomography",
+                "Laboratory procedure",
                 "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Treatment planning",
-                "Diagnostic or staging procedure"
+                "Diagnostic or staging procedure",
+                "Treatment planning"
             ]
         },
         {
@@ -531,8 +531,8 @@
             "patid": "Patient/01",
             "dt_record": "2017-11-02",
             "cat_examination_type": [
-                "Laboratory procedure",
                 "computed tomography",
+                "Laboratory procedure",
                 "Magnetic resonance imaging",
                 "Ultrasonography"
             ],
@@ -581,9 +581,9 @@
             "patid": "Patient/01",
             "dt_record": "2018-05-18",
             "cat_examination_type": [
+                "computed tomography",
                 "Laboratory procedure",
-                "physical exam",
-                "computed tomography"
+                "physical exam"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -603,11 +603,11 @@
             "patid": "Patient/01",
             "dt_record": "2018-09-06",
             "cat_examination_type": [
-                "computed tomography",
-                "Electrocardiography",
-                "Laboratory procedure",
+                "physical exam",
                 "Magnetic resonance imaging",
-                "physical exam"
+                "Laboratory procedure",
+                "computed tomography",
+                "Electrocardiography"
             ],
             "cat_reasons": "Therapeutic Procedure"
         },
@@ -663,9 +663,9 @@
             "patid": "Patient/01",
             "dt_record": "2019-04-18",
             "cat_examination_type": [
+                "computed tomography",
                 "Laboratory procedure",
-                "physical exam",
-                "computed tomography"
+                "physical exam"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -952,18 +952,18 @@
             "patid": "Patient/01",
             "dt_record": "2013-01-01",
             "val_print": [
-                "NRAwildtype",
-                "BRAwildtype"
+                "BRAwildtype",
+                "NRAwildtype"
             ]
         },
         {
             "patid": "Patient/01",
             "dt_record": "2015-12-14",
             "val_print": [
-                "NRAwildtype",
-                "NFwildtype",
                 "TERwildtype",
-                "BRAwildtype"
+                "NRAwildtype",
+                "BRAwildtype",
+                "NFwildtype"
             ]
         }
     ],
@@ -971,145 +971,124 @@
         {
             "patid": "Patient/01",
             "time_of_careplan": "2019-02-06",
-            "careplan_name": "radiotherapy",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2019-02-06",
-            "careplan_name": "Targeted Substances",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2018-02-21",
-            "careplan_name": "Targeted Substances",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2017-11-08",
-            "careplan_name": "Targeted Substances",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2017-08-30",
-            "careplan_name": "Targeted Substances",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2017-08-09",
-            "careplan_name": "Diagnosis",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2017-05-24",
-            "careplan_name": "Targeted Substances",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2017-02-08",
-            "careplan_name": "radiotherapy",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2017-01-11",
-            "careplan_name": "Diagnosis",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2016-07-06",
-            "careplan_name": "Antibody/Immunotherapy",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2016-05-12",
-            "careplan_name": "radiotherapy",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2016-05-02",
-            "careplan_name": "surgery",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2016-05-02",
-            "careplan_name": "surgery",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2015-12-10",
-            "careplan_name": "surgery",
             "careplan_intention": "palliative"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2014-11-23",
-            "careplan_name": "Targeted Substances",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2014-10-29",
-            "careplan_name": "surgery",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2014-10-06",
-            "careplan_name": "surgery",
             "careplan_intention": "palliative",
             "careplan_type": "recurrence therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2014-02-12",
-            "careplan_name": "Antibody/Immunotherapy",
             "careplan_intention": "Curative"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2014-02-06",
-            "careplan_name": "surgery",
             "careplan_intention": "Curative",
             "careplan_type": "primal therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2014-01",
-            "careplan_name": "surgery",
             "careplan_intention": "Curative",
             "careplan_type": "primal therapy"
         },
         {
             "patid": "Patient/01",
             "time_of_careplan": "2013-12",
-            "careplan_name": "surgery",
             "careplan_intention": "Curative"
         }
     ]
