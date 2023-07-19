@@ -17,15 +17,16 @@ attributes by domain experts, iii) extraction of relevant attributes and iv) vis
 
 ## Example
 This example is based on a synthetic, but realistic patient.
-1.Selection criteria: Melanoma patients: Condition.category = |C0677930 (Primary Neoplasm) AND Condition.code = C43.*.
-2.FHIR 
+### 1.Selection criteria:
+Melanoma patients: Condition.category = |C0677930 (Primary Neoplasm) AND Condition.code = C43.*.
+### 2.FHIR 
   under "Example_patient" folder,"patient_01.json"
-3.Relevance judgement of attributes
+### 3.Relevance judgement of attributes
   under relevance judgment
-4.Simple JSON output
+### 4.Simple JSON output
   under "Visualisation" folder,"patient_01_simple.json"
-5.Visualisation
-
+### 5.Visualisation
+  
 <img width="1291" alt="github_all" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/88e249fe-0033-45e7-8a20-fae0e95ef81f">
 
 <img width="1282" alt="github_progress" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/0f8fa01d-fa8a-4d1d-a44d-d6d0b7929763">
