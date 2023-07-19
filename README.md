@@ -15,6 +15,9 @@ attributes by domain experts, iii) extraction of relevant attributes and iv) vis
 
 <img width="613" alt="Pipeline" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/9f1c499d-4ee7-4fab-87c3-dec731f1cbab">
 
+## Required Python Packages: 
+
+
 ## Example
 This example is based on a synthetic, but realistic patient.
 ### 1.Selection criteria:
