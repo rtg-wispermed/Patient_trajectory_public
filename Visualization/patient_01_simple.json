@@ -135,28 +135,28 @@
             "patid": "Patient/01",
             "dt_record": "2014-08-22",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
                 "physical exam",
-                "Ultrasonography"
+                "Ultrasonography",
+                "computed tomography"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Follow-up"
+                "Follow-up",
+                "Diagnostic or staging procedure"
             ]
         },
         {
             "patid": "Patient/01",
             "dt_record": "2014-10-06",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
                 "physical exam",
-                "Ultrasonography"
+                "Ultrasonography",
+                "computed tomography"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Follow-up"
+                "Follow-up",
+                "Diagnostic or staging procedure"
             ]
         },
         {
@@ -172,10 +172,10 @@
             "patid": "Patient/01",
             "dt_record": "2014-10-31",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
                 "physical exam",
-                "Magnetic resonance imaging"
+                "Magnetic resonance imaging",
+                "computed tomography"
             ],
             "cat_reasons": [
                 "medical care",
@@ -210,14 +210,14 @@
             "dt_record": "2015-04-23",
             "cat_examination_type": [
                 "physical exam",
+                "computed tomography",
                 "Ultrasonography",
-                "Magnetic resonance imaging",
                 "Laboratory procedure",
-                "computed tomography"
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Follow-up"
+                "Follow-up",
+                "Diagnostic or staging procedure"
             ]
         },
         {
@@ -235,22 +235,22 @@
             "dt_record": "2015-10-30",
             "cat_examination_type": [
                 "physical exam",
+                "computed tomography",
                 "Ultrasonography",
-                "Magnetic resonance imaging",
                 "Laboratory procedure",
-                "computed tomography"
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Follow-up"
+                "Follow-up",
+                "Diagnostic or staging procedure"
             ]
         },
         {
             "patid": "Patient/01",
             "dt_record": "2015-12-10",
             "cat_examination_type": [
-                "physical exam",
-                "Ultrasonography"
+                "Ultrasonography",
+                "physical exam"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
@@ -269,10 +269,10 @@
             "dt_record": "2016-04-29",
             "cat_examination_type": [
                 "physical exam",
-                "Ultrasonography",
-                "Magnetic resonance imaging",
+                "computed tomography",
                 "Laboratory procedure",
-                "computed tomography"
+                "Ultrasonography",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": [
                 "medical care",
@@ -293,12 +293,12 @@
             "patid": "Patient/01",
             "dt_record": "2016-07-01",
             "cat_examination_type": [
-                "computed tomography",
-                "Laboratory procedure"
+                "Laboratory procedure",
+                "computed tomography"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Therapeutic Procedure"
+                "Therapeutic Procedure",
+                "Diagnostic or staging procedure"
             ]
         },
         {
@@ -399,9 +399,9 @@
             "patid": "Patient/01",
             "dt_record": "2016-09-30",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
-                "physical exam"
+                "physical exam",
+                "computed tomography"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
@@ -443,9 +443,9 @@
             "patid": "Patient/01",
             "dt_record": "2017-01-13",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
-                "Magnetic resonance imaging"
+                "Magnetic resonance imaging",
+                "computed tomography"
             ],
             "cat_reasons": [
                 "Diagnostic or staging procedure",
@@ -507,8 +507,8 @@
             "patid": "Patient/01",
             "dt_record": "2017-08-28",
             "cat_examination_type": [
-                "computed tomography",
-                "Electrocardiography"
+                "Electrocardiography",
+                "computed tomography"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
@@ -531,10 +531,10 @@
             "patid": "Patient/01",
             "dt_record": "2017-11-02",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
+                "Ultrasonography",
                 "Magnetic resonance imaging",
-                "Ultrasonography"
+                "computed tomography"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
@@ -581,13 +581,13 @@
             "patid": "Patient/01",
             "dt_record": "2018-05-18",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
-                "physical exam"
+                "physical exam",
+                "computed tomography"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Therapeutic Procedure"
+                "Therapeutic Procedure",
+                "Diagnostic or staging procedure"
             ]
         },
         {
@@ -604,10 +604,10 @@
             "dt_record": "2018-09-06",
             "cat_examination_type": [
                 "physical exam",
-                "Magnetic resonance imaging",
-                "Laboratory procedure",
                 "computed tomography",
-                "Electrocardiography"
+                "Laboratory procedure",
+                "Electrocardiography",
+                "Magnetic resonance imaging"
             ],
             "cat_reasons": "Therapeutic Procedure"
         },
@@ -636,8 +636,8 @@
             "patid": "Patient/01",
             "dt_record": "2019-01-29",
             "cat_examination_type": [
-                "computed tomography",
-                "Magnetic resonance imaging"
+                "Magnetic resonance imaging",
+                "computed tomography"
             ],
             "cat_reasons": "Diagnostic or staging procedure"
         },
@@ -663,13 +663,13 @@
             "patid": "Patient/01",
             "dt_record": "2019-04-18",
             "cat_examination_type": [
-                "computed tomography",
                 "Laboratory procedure",
-                "physical exam"
+                "physical exam",
+                "computed tomography"
             ],
             "cat_reasons": [
-                "Diagnostic or staging procedure",
-                "Therapeutic Procedure"
+                "Therapeutic Procedure",
+                "Diagnostic or staging procedure"
             ]
         },
         {
@@ -933,7 +933,6 @@
             "patid": "Patient/01",
             "dt_record": "2013-12",
             "flg_ulcerated": true,
-            "flg_regression": false,
             "no_tumor_thickness": 1.9
         },
         {
@@ -960,9 +959,9 @@
             "patid": "Patient/01",
             "dt_record": "2015-12-14",
             "val_print": [
-                "TERwildtype",
-                "NRAwildtype",
                 "BRAwildtype",
+                "NRAwildtype",
+                "TERwildtype",
                 "NFwildtype"
             ]
         }

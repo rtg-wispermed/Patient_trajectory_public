@@ -22,7 +22,7 @@
     body,
     #container {
       width: 95%;
-      height: 80%;
+      height: 90%;
       margin: 10;
       padding: 10;
     }
@@ -54,7 +54,8 @@
   let p_Time = []
   let p_Id = []
   let p_Gender = []
-  let  p_Birthday = []
+  let p_Birthday = []
+  let p_tumor = []
   fetch('./patient_01_simple.json')
         .then((response) => response.json())
         .then((data) => {
@@ -62,7 +63,8 @@
           p_Gender.push(data.patient_info.gender)
           p_Birthday.push(data.patient_info.birthDate)
           p_Time.push(data.patient_info.deceasedDateTime)
-          document.getElementById("patient_meta").innerHTML = `ID:${p_Id}<br/>Gender:${p_Gender}<br/>Birthday:${p_Birthday}<br/>Deceased time:${p_Time}`
+          p_tumor.push(data.stages[0].ICD10_2019_cancer_code)
+          document.getElementById("patient_meta").innerHTML = `ID:${p_Id}<br/>Gender:${p_Gender}<br/>Birthday:${p_Birthday}<br/>Deceased time:${p_Time}<br/>Tumor:${p_tumor}`
         });
   
   </script>
@@ -82,9 +84,8 @@
       let careplan_data = []// point
       let properties = []//point
       let oncogenes = [] //point
-      
+      let radiotherapy_data = []//range
 
-    
       
 
       fetch('./patient_01_simple.json')
@@ -123,6 +124,9 @@
          for (let item of data.oncogenes){
             oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
          }
+         for (let item of data.radiotherapy){
+            radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
+         }
         patient_id.push(data.patient_info.id)
         
     
@@ -158,13 +162,13 @@
           // create for oncogenes
           var momentSeries5 = chart.moment(oncogenes);
           momentSeries5.name("oncogenes");
-         ;
+         
          
          
           // create the first range series, set the data and name
           var rangeSeries1 = chart.range(stage_data);
           rangeSeries1.name("tumorstage");
-          rangeSeries1.normal().fill("#FAC898")
+          rangeSeries1.normal().fill("#FAC898");
 
           // create the second range series, set the data and name
           var rangeSeries2 = chart.range(medication_data);
@@ -173,7 +177,10 @@
           rangeSeries2.normal().fill("#7CB9E8");
           //momentSeries2.normal().fill("#00a8e0");
        
-
+          var rangeSeries3 = chart.range(radiotherapy_data);
+          rangeSeries3.name("radiotherapy");
+          rangeSeries2.direction("down");
+          rangeSeries2.normal().fill("#7CB9E8");
 
 
           // set the chart title
