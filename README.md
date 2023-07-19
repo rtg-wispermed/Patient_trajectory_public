@@ -11,6 +11,8 @@ best treatment plan for their patients.
 ## Approach
 Our pipeline consists of four steps (cf. Figure 1): i) patient selection, ii) relevance judgement of
 attributes by domain experts, iii) extraction of relevant attributes and iv) visualisation.
+
+
 <img width="613" alt="Pipeline" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/9f1c499d-4ee7-4fab-87c3-dec731f1cbab">
 
 ## For fake patient building
