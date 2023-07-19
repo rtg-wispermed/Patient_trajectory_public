@@ -15,10 +15,18 @@ attributes by domain experts, iii) extraction of relevant attributes and iv) vis
 
 <img width="613" alt="Pipeline" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/9f1c499d-4ee7-4fab-87c3-dec731f1cbab">
 
-## For fake patient building
+## Example
+This example is based on a synthetic, but realistic patient.
+1.Selection criteria: Melanoma patients: Condition.category = |C0677930 (Primary Neoplasm) AND Condition.code = C43.*.
+2.FHIR 
+  under "Example_patient" folder,"patient_01.json"
+3.Relevance judgement of attributes
+  under relevance judgment
+4.Simple JSON output
+  under "Visualisation" folder,"patient_01_simple.json"
+5.Visualisation
 
-1. Transfer all German words to English use  "deep_translator" API
-2. Modify the links include "uk-essen.de", "https://uk-essen.de/HIS/Cerner/Medico/TumorDocumentation/.." to "https://hospital.org/TumorDocumentation/.."
-3. Add random noise for the data infromaton within 10 days without change the order of the elements.
-4. Manually change the patient 'id', 'birthdate' and 'deceasedDateTime'
-5. Manually add some fake information 
+<img width="1291" alt="github_all" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/88e249fe-0033-45e7-8a20-fae0e95ef81f">
+
+<img width="1282" alt="github_progress" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/0f8fa01d-fa8a-4d1d-a44d-d6d0b7929763">
+
