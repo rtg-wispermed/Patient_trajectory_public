@@ -63,8 +63,8 @@
           p_Gender.push(data.patient_info.gender)
           p_Birthday.push(data.patient_info.birthDate)
           p_Time.push(data.patient_info.deceasedDateTime)
-          p_tumor.push(data.stages[0].ICD10_2019_cancer_code)
-          document.getElementById("patient_meta").innerHTML = `ID:${p_Id}<br/>Gender:${p_Gender}<br/>Birthday:${p_Birthday}<br/>Deceased time:${p_Time}<br/>Tumor:${p_tumor}`
+          //p_tumor.push(data.stages[0].ICD10_2019_cancer_code)
+          document.getElementById("patient_meta").innerHTML = `ID:${p_Id}<br/>Gender:${p_Gender}<br/>Birthday:${p_Birthday}<br/>Deceased time:${p_Time}`
         });
   
   </script>
