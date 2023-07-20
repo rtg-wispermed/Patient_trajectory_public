@@ -15,8 +15,6 @@ attributes by domain experts, iii) extraction of relevant attributes and iv) vis
 
 <img width="613" alt="Pipeline" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/9f1c499d-4ee7-4fab-87c3-dec731f1cbab">
 
-## Required Python Packages: 
-
 
 ## Example
 This example is based on a synthetic, but realistic patient.
@@ -25,11 +23,11 @@ This example is based on a synthetic, but realistic patient.
 ### 2.FHIR 
   Under "Example_patient" folder,"patient_01.json", which is a synthetic, but realistic patient. 
 ### 3.Relevance judgement of attributes
-  Under "Relevance_judgment" folder.
-### 4.Simple JSON outputcs
+  Under "Relevance_judgment" folder. We selected the attributes which at least one clinician rated as very important for inclusion in the patient trajectory visualisation.
+### 4.Simple JSON outputs
   Under "Visualisation" folder,"patient_01_simple.json".
 ### 5.Visualisation
-Example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
+For visulisation, we utilize the publicly available, web-based charting framework AnyChart url{https://github.com/AnyChart}. Example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
 <img width="1514" alt="Screenshot 2023-07-20 at 14 04 31" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/7324f82d-f498-4c66-b3e3-ed94a595dcb8">
 
 Example with filter function, only show the progress information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
