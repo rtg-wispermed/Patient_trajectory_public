@@ -25,9 +25,9 @@ This example is based on a synthetic, but realistic patient.
 ### 2.FHIR 
   Under "Example_patient" folder,"patient_01.json", which is a synthetic, but realistic patient. 
 ### 3.Relevance judgement of attributes
-  Under relevance judgment
-### 4.Simple JSON output
-  Under "Visualisation" folder,"patient_01_simple.json"
+  Under "Relevance_judgment" folder.
+### 4.Simple JSON outputcs
+  Under "Visualisation" folder,"patient_01_simple.json".
 ### 5.Visualisation
 Example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
 <img width="1291" alt="github_all" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/88e249fe-0033-45e7-8a20-fae0e95ef81f">
