@@ -27,9 +27,9 @@ This example is based on a synthetic, but realistic patient.
 ### 4.Simple JSON outputs
   Under "Visualisation" folder,"patient_01_simple.json".
 ### 5.Visualisation
-For visulisation, we utilize the publicly available, web-based charting framework AnyChart(https://github.com/AnyChart). Example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
+For visulisation, we utilize the publicly available, web-based charting framework AnyChart(https://github.com/AnyChart). An example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
 <img width="1514" alt="Screenshot 2023-07-20 at 14 04 31" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/7324f82d-f498-4c66-b3e3-ed94a595dcb8">
 
-Example with filter function, only show the progress information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
+An example with filter function, only show the progress information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
 <img width="1282" alt="github_progress" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/0f8fa01d-fa8a-4d1d-a44d-d6d0b7929763">
 
