@@ -30,7 +30,7 @@ This example is based on a synthetic, but realistic patient.
   Under "Visualisation" folder,"patient_01_simple.json".
 ### 5.Visualisation
 Example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
-<img width="1291" alt="github_all" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/88e249fe-0033-45e7-8a20-fae0e95ef81f">
+<img width="1514" alt="Screenshot 2023-07-20 at 14 04 31" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/7324f82d-f498-4c66-b3e3-ed94a595dcb8">
 
 Example with filter function, only show the progress information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
 <img width="1282" alt="github_progress" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/0f8fa01d-fa8a-4d1d-a44d-d6d0b7929763">
