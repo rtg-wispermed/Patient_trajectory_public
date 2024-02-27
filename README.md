@@ -1,4 +1,7 @@
 ## Patient trajectory visualization for FHIR healthcare data: A use case on melanoma patients
+This repository is the official implementation of the paper https://ceur-ws.org/Vol-3630/LWDA2023-paper14.pdf
+
+## Abstract
 Fast Healthcare Interoperability Resources (FHIR) is gaining popularity as a standard framework for
 the exchange of electronic health record (EHR) data. Despite the advantages of FHIR, it is difficult
 for clinicians to understand the data in EHR. To support clinicians in accessing data about a patient,
@@ -9,8 +12,8 @@ the patient’s disease progress and physical condition more quickly, which coul
 best treatment plan for their patients. 
 
 ## Approach
-Our pipeline consists of four steps (cf. Figure 1): i) patient selection, ii) relevance judgement of
-attributes by domain experts, iii) extraction of relevant attributes and iv) visualisation.
+Our pipeline consists of four steps (cf. Figure 1): i) patient selection, ii) relevance judgment of
+attributes by domain experts, iii) extraction of relevant attributes, and iv) visualization.
 
 
 <img width="613" alt="Pipeline" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/9f1c499d-4ee7-4fab-87c3-dec731f1cbab">
