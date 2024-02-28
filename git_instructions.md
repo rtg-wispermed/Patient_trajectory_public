@@ -18,7 +18,7 @@ git rev-parse --show-toplevel
 - Let's say you do not have local repository you would clone this repository like so
 
 ```
-git clone https://github.com/rtg-wispermed/patient-history.git
+git clone https://github.com/rtg-wispermed/Patient_trajectory_public.git
 
 ```
 This will initialize the git and download all the content from default branch.
@@ -27,7 +27,7 @@ This will initialize the git and download all the content from default branch.
 ```
 git init 
 
-git remote add patient-history https://github.com/rtg-wispermed/patient-history.git
+git remote add patient-public https://github.com/rtg-wispermed/Patient_trajectory_public.git
 
 ```
 
@@ -41,7 +41,7 @@ git status
 Assume, someone else made some changes before you and commited them. You would want to update your local repository.( Actually it makes sense to do it before start working because we are small group and no one would write a code that conflicts with other codes.) Run command:
 
 ```
-git pull patient-history main
+git pull patient-public main
 
 ```
 Then, you stage your changes. The '.' means you want to stage all of your changes.

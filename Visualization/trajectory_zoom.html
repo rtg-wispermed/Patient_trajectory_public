@@ -105,7 +105,7 @@
 
          }
         for (let item of data.progresses){
-            progress_data.push([item.dt_record,` Progress:${item.cat_progress_nodes} `])
+            progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
          }
          for (let item of data.medication){
             medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end}`,item.dt_start,item.dt_end])
