@@ -42,10 +42,10 @@
   cursor: pointer;
 }
 
-.button1 {background-color: #ACE1AF;} /* Green */
+.button1 {background-color: #609966;} /* Green */
 .button2 {background-color: #4CAF50;} /* Green */
 .button3 {background-color: #609966;} /* Green */
-   
+.button4 {background-color: #4CAF50;} /* Green */  
   </style>
 </head>
 
@@ -53,8 +53,22 @@
     <div id="patient_meta"></div>
     <button id="btn1" class="button button1">All</button>
     <div id="all" style="display:none"></div>
+    <button id="btn10" class="button button4">Tumor_stage</button>
+    <div id="stage" style="display:none"></div>
     <button id="btn2" class="button button2">Progress</button>
     <div id="progress" style="display:none"></div>
+    <button id="btn4" class="button button4">Medication</button>
+    <div id="medication" style="display:none"></div>
+    <button id="btn5" class="button button4">Examination</button>
+    <div id="examination" style="display:none"></div>
+    <button id="btn6" class="button button4">Careplan</button>
+    <div id="careplan" style="display:none"></div>
+    <button id="btn7" class="button button4">Properties</button>
+    <div id="properties" style="display:none"></div>
+    <button id="btn8" class="button button4">Oncogenes</button>
+    <div id="oncogenes" style="display:none"></div>
+    <button id="btn9" class="button button4">Radiotherapy</button>
+    <div id="radiotherapy" style="display:none"></div>
     <button id="btn3" class="button button3">Progress + Medication</button>
     <div id="progress_medication" style="display:none"></div>
   
@@ -69,6 +83,48 @@
       const _div2 = document.querySelector('#progress')
       btn2.addEventListener("click", () => {
           _div2.style.display = _div2.style.display ? '' : 'none'
+       
+      })
+      const btn4 = document.querySelector('#btn4')
+      const _div4 = document.querySelector('#medication')
+      btn4.addEventListener("click", () => {
+          _div4.style.display = _div4.style.display ? '' : 'none'
+       
+      })
+      const btn5 = document.querySelector('#btn5')
+      const _div5 = document.querySelector('#examination')
+      btn5.addEventListener("click", () => {
+          _div5.style.display = _div5.style.display ? '' : 'none'
+       
+      })
+      const btn6 = document.querySelector('#btn6')
+      const _div6 = document.querySelector('#careplan')
+      btn6.addEventListener("click", () => {
+          _div6.style.display = _div6.style.display ? '' : 'none'
+       
+      })
+      const btn7 = document.querySelector('#btn7')
+      const _div7 = document.querySelector('#properties')
+      btn7.addEventListener("click", () => {
+          _div7.style.display = _div7.style.display ? '' : 'none'
+       
+      })
+      const btn8 = document.querySelector('#btn8')
+      const _div8 = document.querySelector('#oncogenes')
+      btn8.addEventListener("click", () => {
+          _div8.style.display = _div8.style.display ? '' : 'none'
+       
+      })
+      const btn9 = document.querySelector('#btn9')
+      const _div9 = document.querySelector('#radiotherapy')
+      btn9.addEventListener("click", () => {
+          _div9.style.display = _div9.style.display ? '' : 'none'
+       
+      })
+      const btn10 = document.querySelector('#btn10')
+      const _div10 = document.querySelector('#stage')
+      btn10.addEventListener("click", () => {
+          _div10.style.display = _div10.style.display ? '' : 'none'
        
       })
       const btn3 = document.querySelector('#btn3')
@@ -108,13 +164,14 @@
           p_Id.push(data.patient_info.id)
           p_Gender.push(data.patient_info.gender)
           p_Birthday.push(data.patient_info.birthDate)
+          p_Time.push(data.patient_info.deceasedDateTime)
           document.getElementById("patient_meta").innerHTML = `ID:${p_Id}<br/>Gender:${p_Gender}<br/>Birthday:${p_Birthday}<br/>Deceased time:${p_Time}`
         });
   </script>
  
 
   <script type="text/javascript">
-  
+  //progress
   anychart.onDocumentReady(function () {
 
       // create data
@@ -142,8 +199,8 @@
             examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
 
          }
-        for (let item of data.progresses){
-            progress_data.push([item.dt_record,` Progress:${item.cat_progress_nodes} `])
+         for (let item of data.progresses){
+            progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
          }
          for (let item of data.medication){
             medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
@@ -185,7 +242,7 @@
 
 
           // set the chart title
-          chart.title("Patient trajectory:"+ patient_id[0]);
+          
           
           chart.scale().zoomLevels([
             [
@@ -221,251 +278,744 @@
 
   });
 
+  //medication
   anychart.onDocumentReady(function () {
 
-// create data
+    // create data
 
-let stage_data = [] //range
-let examinations_data = [] //point
-let progress_data = [] //point
-let patient_id = []
-let medication_data = [] //range
-let careplan_data = []// point
-let properties = []//point
-let oncogenes = [] //point
-
-
-
-
-fetch('./patient_01_simple.json')
-  .then((response) => response.json())
-  .then((data) => {
-   
-    for (let item of data.stages) {
-            stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
-
-        }
-        for (let item of data.examinations){
-            examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
-
-         }
-         for (let item of data.progresses){
-            progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
-         }
-         for (let item of data.medication){
-            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
-         }
-         for (let item of data.careplans){
-            careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
-         }
-        for (let item of data.properties_primary){
-            if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
-            properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
-            }
-            else{
-            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
-            }
-         }
-         for (let item of data.oncogenes){
-            oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
-         }
-         for (let item of data.radiotherapy){
-            radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
-         }
-         patient_id.push(data.patient_info.id)
-
-    
-    //document.getElementById('paient_data').innerHTML = meta_data
-    // create a chart
-    var chart = anychart.timeline();
-    // prevent zooming the chart with the mouse wheel
-    chart.interactivity().zoomOnMouseWheel(false)
-    
-    // creat for careplan
-    var momentSeries2 = chart.moment(progress_data);
-    momentSeries2.name("progress");
-  
-    // create the second range series, set the data and name
-    var rangeSeries2 = chart.range(medication_data);
-    rangeSeries2.name("medication");
-    rangeSeries2.direction("down");
-    rangeSeries2.normal().fill("#7CB9E8");
-    //rangeSeries2.normal().fill("#00a8e0");
-    //momentSeries2.normal().fill("#00a8e0"); 
- 
-    // set the chart title
-    chart.title("Patient trajectory:"+ patient_id[0]);
-
-    chart.scale().zoomLevels([
-            [
-              { unit: 'year', count: 0.5 },
-              { unit: 'year', count: 5 },
-              { unit: 'year', count: 10 }
-            ],
-            [
-              { unit: 'year', count: 5 },
-              { unit: 'year', count: 10 },
-              { unit: 'year', count: 20 }
-            ]
-          ]);
-
-          // enable chart scroller
-          chart.scroller().enabled(true);
-
-          var zoom = anychart.ui.zoom();
-
-          zoom.render(chart);
-  
-
-    // set the container id
-    chart.container("progress_medication");
-
-    // initiate drawing the chart  
-    chart.draw();
- 
-    // set default chart zoom
-    chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
-
-   });
-
-});
+    let stage_data = [] //range
+    let examinations_data = [] //point
+    let progress_data = [] //point
+    let patient_id = []
+    let medication_data = [] //range
+    let careplan_data = []// point
+    let properties = []//point
+    let oncogenes = [] //point
+    let radiotherapy_data = []//range
 
 
-anychart.onDocumentReady(function () {
+    fetch('./patient_01_simple.json')
+      .then((response) => response.json())
+      .then((data) => {
+      
+        for (let item of data.stages) {
+          stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
 
-// create data
+      }
+      for (let item of data.examinations){
+          examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
 
-let stage_data = [] //range
-let examinations_data = [] //point
-let progress_data = [] //point
-let patient_id = []
-let medication_data = [] //range
-let careplan_data = []// point
-let properties = []//point
-let oncogenes = [] //point
-let radiotherapy_data = []//range
+      }
+      for (let item of data.progresses){
+          progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
+      }
+      for (let item of data.medication){
+          medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
+      }
+      for (let item of data.careplans){
+          careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+      }
+      for (let item of data.properties_primary){
+          if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
+          properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
+          }
+          else{
+          properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
+          }
+      }
+      for (let item of data.oncogenes){
+          oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
+      }
+      for (let item of data.radiotherapy){
+          radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
+      }
+      patient_id.push(data.patient_info.id)
 
-
-fetch('./patient_01_simple.json')
-  .then((response) => response.json())
-  .then((data) => {
-   
-    for (let item of data.stages) {
-            stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
-
-        }
-        for (let item of data.examinations){
-            examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
-
-         }
-         for (let item of data.progresses){
-            progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
-         }
-         for (let item of data.medication){
-            medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
-         }
-         for (let item of data.careplans){
-            careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
-         }
-        for (let item of data.properties_primary){
-            if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
-            properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
-            }
-            else{
-            properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
-            }
-         }
-         for (let item of data.oncogenes){
-            oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
-         }
-         for (let item of data.radiotherapy){
-            radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
-         }
-         patient_id.push(data.patient_info.id)
-
-          //document.getElementById('paient_data').innerHTML = meta_data
-          // create a chart
-          var chart = anychart.timeline();
-          // prevent zooming the chart with the mouse wheel
-          chart.interactivity().zoomOnMouseWheel(false);
-
-           // create the first moment series, set the data and name
-          var momentSeries1 = chart.moment(progress_data);
-          momentSeries1.name("progresses");
-          // momentSeries1.direction("down");
-
-          // creat for careplan
-          var momentSeries2 = chart.moment(careplan_data);
-          momentSeries2.name("careplan");
-
-
-          // create for examinations
-          var momentSeries3 = chart.moment(examinations_data);
-          momentSeries3.name("examinations");
-          momentSeries3.direction("down");
-
-          // create for properties
-          var momentSeries4 = chart.moment(properties);
-          momentSeries4.name("properties");
         
+        //document.getElementById('paient_data').innerHTML = meta_data
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
 
-          // create for oncogenes
-          var momentSeries5 = chart.moment(oncogenes);
-          momentSeries5.name("oncogenes");
-         ;
-         
-         
-          // create the first range series, set the data and name
-          var rangeSeries1 = chart.range(stage_data);
-          rangeSeries1.name("tumorstage");
-          rangeSeries1.normal().fill("#FAC898")
+        // create the first moment series, set the data and name
+        //var momentSeries1 = chart.moment(progress_data);
+        //momentSeries1.name("progresses");
+        
+        // create the second range series, set the data and name
+        var rangeSeries2 = chart.range(medication_data);
+        rangeSeries2.name("medication");
+        rangeSeries2.direction("down");
+        rangeSeries2.normal().fill("#7CB9E8");
 
-          // create the second range series, set the data and name
-          var rangeSeries2 = chart.range(medication_data);
-          rangeSeries2.name("medication");
-          rangeSeries2.direction("down");
-          rangeSeries2.normal().fill("#7CB9E8");
-     
-          var rangeSeries3 = chart.range(radiotherapy_data);
-          rangeSeries3.name("radiotherapy");
-          rangeSeries2.direction("down");
-          rangeSeries2.normal().fill("#7CB9E8");
+
+        // set the chart title
+        //chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("medication");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+    //Examination
+    anychart.onDocumentReady(function () {
+      let patient_id = []
+      let examinations_data = [] //point
+
+      fetch('./patient_01_simple.json')
+        .then((response) => response.json())
+        .then((data) => {
+          for (let item of data.examinations){
+          examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
+          }
+          patient_id.push(data.patient_info.id)
+
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+        // create for examinations
+        var momentSeries3 = chart.moment(examinations_data);
+            momentSeries3.name("examinations");
+            momentSeries3.direction("down");
+
+      
+        // set the chart title
+        chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("examination");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+
+    //stage
+    anychart.onDocumentReady(function () {
+      let patient_id = []
+      let stage_data = [] //range
+
+      fetch('./patient_01_simple.json')
+        .then((response) => response.json())
+        .then((data) => {
+          for (let item of data.stages) {
+          stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
+        }
+        patient_id.push(data.patient_info.id)
+
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+
+        // create the first range series, set the data and name
+        var rangeSeries1 = chart.range(stage_data);
+            rangeSeries1.name("tumorstage");
+            rangeSeries1.normal().fill("#FAC898")
+
+
+        // set the chart title
+        // chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("stage");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+
+    //careplan
+    anychart.onDocumentReady(function () {
+      let patient_id = []
+      let careplan_data = []// point
+
+      fetch('./patient_01_simple.json')
+        .then((response) => response.json())
+        .then((data) => {
+          for (let item of data.careplans){
+          careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+        }
+        patient_id.push(data.patient_info.id)
+
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+         // creat for careplan
+         var momentSeries2 = chart.moment(careplan_data);
+            momentSeries2.name("careplan");
+
+
+        // set the chart title
+        // chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("careplan");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+
+    //properties
+    anychart.onDocumentReady(function () {
+      let patient_id = []
+      let properties = []//point
+
+      fetch('./patient_01_simple.json')
+        .then((response) => response.json())
+        .then((data) => {
+          for (let item of data.properties_primary){
+          if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
+          properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
+          }
+          else{
+          properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
+          }
+        }
+        patient_id.push(data.patient_info.id)
+
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+         // create for properties
+         var momentSeries4 = chart.moment(properties);
+         momentSeries4.name("properties");
+
+    
+
+        // set the chart title
+        // chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("properties");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+
+    //oncogenes
+    anychart.onDocumentReady(function () {
+      let patient_id = []
+      let oncogenes = [] //point
+
+      fetch('./patient_01_simple.json')
+        .then((response) => response.json())
+        .then((data) => {
+          for (let item of data.oncogenes){
+          oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
+      }
+      patient_id.push(data.patient_info.id)
+
+      // create a chart
+      var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+        // create for oncogenes
+        var momentSeries5 = chart.moment(oncogenes);
+            momentSeries5.name("oncogenes");
+
+
+        // set the chart title
+        // chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("oncogenes");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+
+
+    
+    //radiotherapy
+    anychart.onDocumentReady(function () {
+      let patient_id = []
+      let radiotherapy_data = []//range
+
+      fetch('./patient_01_simple.json')
+        .then((response) => response.json())
+        .then((data) => {
+          for (let item of data.radiotherapy){
+          radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
+      }
+          patient_id.push(data.patient_info.id)
+
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+        var rangeSeries3 = chart.range(radiotherapy_data);
+            rangeSeries3.name("Radiotherapy");
+            rangeSeries3.direction("down");
+            rangeSeries3.normal().fill("#7CB9E8");
+
+
+        // set the chart title
+        // chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("radiotherapy");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2008/12/01'), new Date('2019/12/01'));
+    
+      });
+
+    });
+    
+      
+      
+      
+      
+    //progress+medication
+    anychart.onDocumentReady(function () {
+
+    // create data
+
+    let stage_data = [] //range
+    let examinations_data = [] //point
+    let progress_data = [] //point
+    let patient_id = []
+    let medication_data = [] //range
+    let careplan_data = []// point
+    let properties = []//point
+    let oncogenes = [] //point
+    let radiotherapy_data = []//range
+
+
+    fetch('./patient_01_simple.json')
+      .then((response) => response.json())
+      .then((data) => {
+      
+        for (let item of data.stages) {
+          stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
+
+      }
+      for (let item of data.examinations){
+          examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
+
+      }
+      for (let item of data.progresses){
+          progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
+      }
+      for (let item of data.medication){
+          medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
+      }
+      for (let item of data.careplans){
+          careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+      }
+      for (let item of data.properties_primary){
+          if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
+          properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
+          }
+          else{
+          properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
+          }
+      }
+      for (let item of data.oncogenes){
+          oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
+      }
+      for (let item of data.radiotherapy){
+          radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
+      }
+      patient_id.push(data.patient_info.id)
+
+        
+        //document.getElementById('paient_data').innerHTML = meta_data
+        // create a chart
+        var chart = anychart.timeline();
+        // prevent zooming the chart with the mouse wheel
+        chart.interactivity().zoomOnMouseWheel(false);
+
+        // create the first moment series, set the data and name
+        //var momentSeries1 = chart.moment(progress_data);
+        //momentSeries1.name("progresses");
+        
+        // creat for progress
+        var momentSeries2 = chart.moment(progress_data);
+        momentSeries2.name("progress");
+
+        // create the second range series, set the data and name
+        var rangeSeries2 = chart.range(medication_data);
+        rangeSeries2.name("medication");
+        rangeSeries2.direction("down");
+        rangeSeries2.normal().fill("#7CB9E8");
+
+        // set the chart title
+        // chart.title("Patient trajectory:"+ patient_id[0]);
+        
+        chart.scale().zoomLevels([
+          [
+            { unit: 'year', count: 0.5 },
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 }
+          ],
+          [
+            { unit: 'year', count: 5 },
+            { unit: 'year', count: 10 },
+            { unit: 'year', count: 20 }
+          ]
+        ]);
+
+        // enable chart scroller
+        chart.scroller().enabled(true);
+
+        var zoom = anychart.ui.zoom();
+
+        zoom.render(chart);
+      
+
+        // set the container id
+        chart.container("progress_medication");
+
+        // initiate drawing the chart  
+        chart.draw();
+
+        // set default chart zoom
+        chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
+    
+      });
+
+    });
+
+    
+
+  //all data
+  anychart.onDocumentReady(function () {
+
+  // create data
+
+  let stage_data = [] //range
+  let examinations_data = [] //point
+  let progress_data = [] //point
+  let patient_id = []
+  let medication_data = [] //range
+  let careplan_data = []// point
+  let properties = []//point
+  let oncogenes = [] //point
+  let radiotherapy_data = []//range
+
+
+  fetch('./patient_01_simple.json')
+    .then((response) => response.json())
+    .then((data) => {
+    
+      for (let item of data.stages) {
+              stage_data.push([`tnmstage:${item.tnm_stage}; ${item.val_print}; rnodes_positve:${item.rnodes_positive} `,item.dt_record,item.dt_end]) 
+
+          }
+          for (let item of data.examinations){
+              examinations_data.push([item.dt_record,` Examinations:${item.cat_examination_type} `])
+
+          }
+          for (let item of data.progresses){
+              progress_data.push([item.dt_record,` Progress_overall:${item.cat_progress_overall}. metastases:${item.cat_progress_metastases}. nodes:${item.cat_progress_nodes} `])
+          }
+          for (let item of data.medication){
+              medication_data.push([`Drugtype:${item.cat_drugtype}  Intention:${item.cat_intention}  Status:${item.cat_status}  End reason:${item.cat_reason_end} num_quantity:${item.num_quantity}`,item.dt_start,item.dt_end])
+          }
+          for (let item of data.careplans){
+              careplan_data.push([item.time_of_careplan,`Careplan: Intention:${item.careplan_intention} Type:${item.careplan_type}`])
+          }
+          for (let item of data.properties_primary){
+              if (`${item.flg_transcapsular}` == 'true'||`${item.flg_transcapsular}` =='false') {
+              properties.push([item.dt_record,` Transcapsular:${item.flg_transcapsular} `])
+              }
+              else{
+              properties.push([item.dt_record,` ulcerated:${item.flg_ulcerated} no_tumor_thickness:${item.no_tumor_thickness} `])
+              }
+          }
+          for (let item of data.oncogenes){
+              oncogenes.push([item.dt_record,`oncogenes:${item.val_print}`])
+          }
+          for (let item of data.radiotherapy){
+              radiotherapy_data.push([`Radiotherapy:intention:${item.cat_intention} status:${item.cat_status} End reason:${item.cat_reason_end}`, item.dt_start, item.dt_end])
+          }
+          patient_id.push(data.patient_info.id)
+
+            //document.getElementById('paient_data').innerHTML = meta_data
+            // create a chart
+            var chart = anychart.timeline();
+            // prevent zooming the chart with the mouse wheel
+            chart.interactivity().zoomOnMouseWheel(false);
+
+            // create the first moment series, set the data and name
+            var momentSeries1 = chart.moment(progress_data);
+            momentSeries1.name("progresses");
+            // momentSeries1.direction("down");
+
+            // creat for careplan
+            var momentSeries2 = chart.moment(careplan_data);
+            momentSeries2.name("careplan");
+
+
+            // create for examinations
+            var momentSeries3 = chart.moment(examinations_data);
+            momentSeries3.name("examinations");
+            momentSeries3.direction("down");
+
+            // create for properties
+            var momentSeries4 = chart.moment(properties);
+            momentSeries4.name("properties");
+          
+
+            // create for oncogenes
+            var momentSeries5 = chart.moment(oncogenes);
+            momentSeries5.name("oncogenes");
+          ;
+          
+          
+            // create the first range series, set the data and name
+            var rangeSeries1 = chart.range(stage_data);
+            rangeSeries1.name("tumorstage");
+            rangeSeries1.normal().fill("#FAC898")
+
+            // create the second range series, set the data and name
+            var rangeSeries2 = chart.range(medication_data);
+            rangeSeries2.name("medication");
+            rangeSeries2.direction("down");
+            rangeSeries2.normal().fill("#7CB9E8");
+      
+            var rangeSeries3 = chart.range(radiotherapy_data);
+            rangeSeries3.name("radiotherapy");
+            rangeSeries2.direction("down");
+            rangeSeries2.normal().fill("#7CB9E8");
+    
+      // set the chart title
+      // chart.title("Patient trajectory:"+ patient_id[0]);
+
+      chart.scale().zoomLevels([
+              [
+                { unit: 'year', count: 0.5 },
+                { unit: 'year', count: 5 },
+                { unit: 'year', count: 10 }
+              ],
+              [
+                { unit: 'year', count: 5 },
+                { unit: 'year', count: 10 },
+                { unit: 'year', count: 20 }
+              ]
+            ]);
+
+            // enable chart scroller
+            chart.scroller().enabled(true);
+
+            var zoom = anychart.ui.zoom();
+
+            zoom.render(chart);
+
+      // set the container id
+      chart.container("all");
+
+      // initiate drawing the chart  
+      chart.draw();
+
+      // set default chart zoom
+      chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
   
-    // set the chart title
-    chart.title("Patient trajectory:"+ patient_id[0]);
+    });
 
-    chart.scale().zoomLevels([
-            [
-              { unit: 'year', count: 0.5 },
-              { unit: 'year', count: 5 },
-              { unit: 'year', count: 10 }
-            ],
-            [
-              { unit: 'year', count: 5 },
-              { unit: 'year', count: 10 },
-              { unit: 'year', count: 20 }
-            ]
-          ]);
-
-          // enable chart scroller
-          chart.scroller().enabled(true);
-
-          var zoom = anychart.ui.zoom();
-
-          zoom.render(chart);
-
-    // set the container id
-    chart.container("all");
-
-    // initiate drawing the chart  
-    chart.draw();
-
-    // set default chart zoom
-    chart.zoomTo(new Date('2012/12/01'), new Date('2019/9/01'));
- 
-   });
-
-});
+  });
 </script>
 </body>
 
