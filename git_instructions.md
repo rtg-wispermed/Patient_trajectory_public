@@ -56,7 +56,7 @@ git commit -m "your commit message"
 Lastly, you must push your commit to the main branch.
 
 ```
-git push patient-history main
+git push patient-public main
 ```
 
 If there is no conflicting code, above commands should work. However, if you think the you should modify (or modified) the code in a way that it would conflict, here is how to create a new branch and start a pull request to be compared and merged with the main branch.
