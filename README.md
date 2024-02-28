@@ -34,6 +34,6 @@ For visulisation, we utilize the publicly available, web-based charting framewor
 ![Alt text](https://github.com/rtg-wispermed/Patient_trajectory_public/blob/main/Images/new_all.png)
 <!--<img width="1514" alt="Screenshot 2023-07-20 at 14 04 31" src="/Users/meijie/Desktop/Patient_trajectory_public-main/new_all.png">-->
 
-An example with filter function, only show the progress information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
-<img width="1282" alt="github_progress" src="https://github.com/rtg-wispermed/Patient_trajectory_public/assets/52000882/0f8fa01d-fa8a-4d1d-a44d-d6d0b7929763">
+An example with filter function,show the combination of progress+medication information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
+![Alt text](https://github.com/rtg-wispermed/Patient_trajectory_public/blob/main/Images/buttons.png)
 
