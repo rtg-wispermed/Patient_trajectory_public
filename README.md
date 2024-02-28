@@ -31,7 +31,7 @@ This example is based on a synthetic, but realistic patient.
   Under "Visualisation" folder,"patient_01_simple.json".
 ### 5.Visualisation
 For visulisation, we utilize the publicly available, web-based charting framework AnyChart(https://github.com/AnyChart). An example with all selected attributes from "Relevance judgement of attributes" step.(cropped due to space constraints, get it by running "trajectory_zoom.html" under "Visualization" folder):
-![Alt text](https://github.com/rtg-wispermed/Patient_trajectory_public/Images/new_all.png)
+![Alt text](https://github.com/rtg-wispermed/Patient_trajectory_public/blob/main/Images/new_all.png)
 <!--<img width="1514" alt="Screenshot 2023-07-20 at 14 04 31" src="/Users/meijie/Desktop/Patient_trajectory_public-main/new_all.png">-->
 
 An example with filter function, only show the progress information(cropped due to space constraints, get it by running "trajectory_filter.html" under "Visualization" folder):
